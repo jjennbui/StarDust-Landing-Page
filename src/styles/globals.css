@@ -1,11 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background-header-rgb: 23, 18, 51;
+  --background-image: url('/assets/backgroundGraphics.svg');
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,14 +20,32 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+ color: rgb(var(--background-header-rgb));
+ font-family: "Josefin Sans", sans-serif;
+ background-color: rgb(var(--background-header-rgb));
+ color: white;
+ background-image: var(--background-image);
+ background-size: cover;
 }
+
+h1{
+  font-size: 100px;
+  font-family: 'NewYork';
+}
+
+h2{
+  font-size: 40px;
+  font-family: 'NewYork';
+}
+
+@font-face { 
+  font-family: 'NewYork'; 
+  src: 
+      url('/public/NewYork\ PERSONAL\ USE.otf')  
+      format('opentype'); 
+  font-weight: normal; 
+  font-style: normal; 
+} 
 
 @layer utilities {
   .text-balance {
