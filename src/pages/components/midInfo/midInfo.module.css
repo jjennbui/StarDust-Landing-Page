@@ -1,21 +1,21 @@
 .containers {
     background-color: rgb(156, 154, 167, 0.6);
-   padding: 40px;
-   border-radius: 10px;
-   width: 70%;
-   margin: 0;
-   display: flex;
-   flex-direction: column;
-   justify-content: center; 
-   align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.contText{
+.contText {
     text-align: center;
-   
+
 }
 
-.star{
+.star {
     display: flex;
     justify-content: center;
 }
@@ -29,4 +29,20 @@
     border: 1px solid;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+
+
+@media screen and (max-width: 637px) {
+    .containers {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .containers {
+        width: 150%;
+        margin: auto 0;
+        margin-left: 160px;
+    }
 }

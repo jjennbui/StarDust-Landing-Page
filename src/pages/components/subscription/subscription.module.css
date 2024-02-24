@@ -1,4 +1,4 @@
-.card{
+.card {
     margin: 20px;
     border: 1px solid #9C9AA7;
     padding-bottom: 40px;
@@ -17,31 +17,47 @@
     padding-right: 20px;
 }
 
-.desc{
+.desc {
     font-weight: 600;
     font-size: 50px;
     margin-bottom: 20px;
     font-family: 'NewYork';
-    
+
 }
 
-.title{
+.title {
     font-weight: 200;
     font-size: 20px;
-    
+
 }
 
-.info{
+.info {
     text-align: center;
 }
 
 
-.plans{
+.plans {
     display: flex;
     gap: 20px;
 }
 
-.container{
+.container {
     margin-top: 40px;
 }
 
+@media screen and (max-width: 1191px) {
+
+    .plans {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width: 526px) {
+    .container {
+        margin-left: 160px;
+    }
+
+}

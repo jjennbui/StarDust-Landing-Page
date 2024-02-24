@@ -7,13 +7,14 @@ export default function TopInfo() {
   return (
     <div className={styles.container}>
       <div className={styles.contText}>
-        <h1>STARDUST</h1>
-      Find your zodiac and get your horoscope.
-      <button className={styles.button}>Download Now</button>
-
+        <h1 className={styles.title}>STARDUST</h1>
+        Find your zodiac and get your horoscope.
+        <button className={styles.button}>Download Now</button>
       </div>
 
-      < Spline scene="https://prod.spline.design/v-tOHxvijTwDxzoI/scene.splinecode" />
+      <div className={styles.spline}>
+        < Spline scene="https://prod.spline.design/v-tOHxvijTwDxzoI/scene.splinecode" />
+      </div>
     </div>
   );
 }
